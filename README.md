@@ -21,7 +21,7 @@ La Gizmondo est une console de jeux vidéo portable faisant également office d'
 
 ## Préparation.
 
-Faites un FORK du dépôt actuel du votre compte Github.
+Faites un FORK du dépôt actuel du votre compte Github (pensez à bien décocher la case `Copy the main branch only` afi nde récupérer toutes les branches du dépôt).
 
 Cloner le dépôt en local et positionner vous dans la branche `asp`.
 
