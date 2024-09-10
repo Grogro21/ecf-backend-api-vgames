@@ -21,27 +21,31 @@ La Gizmondo est une console de jeux vidéo portable faisant également office d'
 
 ## Préparation.
 
-Faites un FORK du dépôt du votre compte Github.
+Faites un FORK du dépôt actuel du votre compte Github.
 
-Cloner le dépôt en local et positionner vous dans le répertoire `symfony` avec votre terminal
+Cloner le dépôt en local et positionner vous dans la branche `asp`.
 
-Installer les dépendances : `composer install`
+A l'aide de Visual Studio, créer un projet `ASP Web API` que vous nommerez `Ecf.Vgames`
 
-Démarrer le serveur web : `php -S localhost:3000 -t public`
-
-Accéder à la page web à analyser: [http://localhost:3000/gizmondo.html](http://localhost:3000/gizmondo.html)
+Installer les packages et dépendances nécessaires.
 
 
 ## Travail à réaliser
 
-Dans le dossier public, vous trouverez une page web `gizmondo.html` qui liste les jeux de la console Gizmondo.
+Dans le dossier `public`, vous trouverez une page web `gizmondo.html` qui liste les jeux de la console Gizmondo.
 
 Votre travail consiste à créer les entités de l'API qui permet de faire fonctionner la page web.
 
-Vous ne devez, en aucun cas, modifier le code HTML, CSS ou JS présent dans le dossier `public`. Toute modification de ce code sera éliminatoire !
+Dans le répertoire `public/assets/`, vous trouverez un fichier `GizmondoRepository.js` dans lequel vous devez modifier la valeur de la variable `apiUrl` (ligne 5) afin qu'elle corresponde à l'url de base de votre API. 
+
+Rendez-vous dans les propriétés de votre projet ou démarrer votre projet API pour identifier l'URL de votre application.
+
+Mise à part la modification demandée ci-dessus, vous ne devez, en aucun cas, modifier le code HTML, CSS ou JS présent dans les autres fichiers du dossier `public`. Toute modification de code sera éliminatoire !
 
 2 entités sont attendues : 
-- Gizmondo
-- Publisher
+- Gizmondo (accessible via l'url 'https://url.de.mon.api:port/gizmondos')
+- Publisher (accessible via l'url 'https://url.de.mon.api:port/publishers')
 
-Les données du jeu d'essai sont disponibles sous forme d'insertions SQL dans le répertoire `_docs` du projet.
+Les données du jeu d'essai sont disponibles dans le répertoire `public/dataset/` du dépôt: 
+- Au format SQL
+- Au format JSON

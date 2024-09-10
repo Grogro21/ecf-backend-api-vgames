@@ -2,7 +2,6 @@ import { GizmondoGame } from "./GizmondoGame.js";
 
 class GizmondoRepository 
 {
-    // static apiUrl = '/dataset/gizmondoGamesList.json';
     static apiUrl = '/api/';
 
     static async fetchGames()
