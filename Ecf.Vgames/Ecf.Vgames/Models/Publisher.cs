@@ -1,0 +1,11 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Ecf.Vgames.Models
+{
+    public class Publisher
+    {
+        public int Id { get; set; }
+        [Column("name")]
+        public string Name { get; set; }
+    }
+}
